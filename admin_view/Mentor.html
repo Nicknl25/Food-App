@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Week 2</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      h1 {
+        color: red;
+        font-size: 50px;
+        text-align: center;
+      } /* Type selector specificity is 1 */
+
+      .heading {
+        color: blue;
+        font-size: 20px;
+      } /* Class selector specificity is 10 */
+
+      #title {
+        color: green;
+        font-size: 40px;
+      } /* ID selector specificity is 100 */
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="title" class="heading" style="color: brown">Css Basic Title</h1>
+    </div>
+  </body>
+</html>

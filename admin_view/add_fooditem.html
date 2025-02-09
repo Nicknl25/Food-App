@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add FoodItem</title>
+        <link rel="stylesheet" href="./MentorCSS.css">
+    </head>
+    <body>
+        <h1>Add FoodItem</h1>
+        <hr>
+
+        <form id="form1">
+            <table>
+
+                <tr>
+                    <td>
+                        <caption><b>FoodItem Information</b></caption>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="FoodItem_name">FoodItem Name:</label></td>
+                    <td><input type="text" name="FoodItem_name" id="FoodItem_name"></td>
+                
+                <tr>
+                    <td><label for="Fooditem_discription">FoodItem Discription:</label></td>
+                    <td><textarea rows="3" name="FoodItem_address" id="FoodItem_address"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="available_check">Available?</label></td>
+                    <td><input type="checkbox" name="available_check" id="available_check"></tr>
+                </tr>
+
+                <tr>
+                    <td><label for="vege_check">Vegiterian?</label></td>
+                    <td><input type="checkbox" name="vege_check" id="vege_check"></tr>
+                </tr>
+                
+                <tr>
+                    <td><label for="category">Category</label></td>
+                    <td>
+                        <select name="category" id="category">
+                            <option value="fast_food">Fast Food</option>
+                            <option value="comfort_food">Comfort Food</option>
+                            <option value="diner_food">Diner Food</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="cuisine">Cuisine</label></td>
+                    <td>
+                        <select name="cuisine" id="cuisine">
+                            <option value="hamburger">Hamburger</option>
+                            <option value="fried_chicken">Fried Chicken</option>
+                            <option value="hashbrowns">Hashbrowns</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Image URL</td>
+                    <td><input type="text" name="res_pic" id="res_pic"></td>
+                </tr>
+               
+                    
+
+                 <tr>   
+                   <td> <button>Discard</button> </td>
+                    <td><button>Save</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+</html>

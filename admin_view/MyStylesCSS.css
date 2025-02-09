@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+h1, h3 {
+    color: rgb(93, 93, 210);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    width: calc(50% - 20px); /* Two cards per row */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.card a {
+    text-decoration: none;
+    color: dimgrey;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+
