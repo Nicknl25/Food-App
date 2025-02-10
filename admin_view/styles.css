@@ -1,3 +1,41 @@
 ul.content-section {
     list-style-type: none;
 }
+
+header {
+    text-align: center; 
+}
+
+.container2 {
+    display: flex; /*not specifying flex-direction defaults to row*/
+    flex-wrap: wrap;
+    justify-content: center; /*along the horizontal axis we want content in middle*/
+    align-items: flex-start; /*aligns to the cross, which is vertical center middle*/
+    margin-top: 0px; /* Change this line */
+}
+
+.content-section {
+    display: flex;
+    align-content: center;
+    height: auto;
+}
+
+.my-rectangle {
+    border: 10px solid #000;
+}
+
+.card1 {
+    margin: 10px;
+}
+
+/* Add media query for mobile viewports */
+@media (max-width: 600px) {
+    .container2 {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items in the column */
+    }
+    
+    .content-section {
+        flex-direction: column; /* Ensure the content section also changes to column */
+    }
+}
