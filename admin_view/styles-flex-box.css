@@ -1,0 +1,29 @@
+.Myheader{
+    
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+ul .card1{
+    list-style-type: none;
+    margin: 10px;
+}
+
+/*flex direction, justify content, align items adjust how content is structured inside of the parent/flex container*/
+.content-section{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Add media query for mobile viewports */
+@media (max-width: 600px) {
+    .container3 {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center items in the column */
+    }
+    
+    .content-section {
+        flex-direction: column; /* Ensure the content section also changes to column */
+    }
+}

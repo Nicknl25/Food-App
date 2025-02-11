@@ -1,0 +1,73 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px auto auto; /*knows there are 2 columns because 2 numbers are specified*/
+    grid-template-rows: 75px auto 100px; /*two rows, the first adjust to content, the second is 100px*/
+    grid-gap: 10px; /*space between each column and between each row*/
+    min-height: 100vh; /*ensures the grid takes up the full height of the viewport*/
+}
+
+.grid-item{      /*styling for each/all grid items simultaniously. short hand for parent*/
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.header{
+    grid-column: 1 / 4; /*spans 3 columns*/
+    grid-row: 1; /*spans 1 row*/;
+    background-color: aqua;
+}
+
+.sidebar{
+    grid-column: 1; /*item is in first column*/
+    grid-row: 2; /*item is in second row*/
+    background-color: lightblue;
+    border-radius: 20px; /*rounds the corners of the sidebar*/
+}
+
+.main {
+    grid-column: 2 / 4; /*item spans from column 2 to column 3*/
+    grid-row: 2; /*item is in second row*/
+    background-color: lightcoral;
+}
+
+.footer{
+    grid-column: 1 / 4; /*spans 3 columns*/
+    grid-row: 3; /*item is in third row*/
+    background-color: lightgreen;
+}
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* single column layout */
+        grid-template-rows: 75px auto auto 100px; /* four rows */
+    }
+
+    .header {
+        height: 100px; 
+        grid-column: 1; /* spans 1 column */
+        grid-row: 1; /* first row */
+    }
+
+    .sidebar {
+        grid-column: 1; /* spans 1 column */
+        grid-row: 2; /* second row */
+    }
+
+    .main {
+        grid-column: 1; /* spans 1 column */
+        grid-row: 3; /* third row */
+    }
+
+    .footer {
+        height: 100px;
+        grid-column: 1; /* spans 1 column */
+        grid-row: 4; /* fourth row */
+    }
+}
